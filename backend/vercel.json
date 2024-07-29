@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb://sadammuneer:sadam%40123456@ac-fmojhku-shard-00-00.07bagy7.mongodb.net:27017,ac-fmojhku-shard-00-01.07bagy7.mongodb.net:27017,ac-fmojhku-shard-00-02.07bagy7.mongodb.net:27017/jobApp?ssl=true&replicaSet=atlas-dha073-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "PORT": "5000"
+  }
+}
